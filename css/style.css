@@ -58,7 +58,8 @@ body {
    width: 1200px;
    margin-left: auto;
    margin-right: auto;
-   outline: 2px solid tomato;
+
+   /*outline: 2px solid tomato;*/
 }
 /*Хедер - вирівненя елементів хедера, КОСТИЛЬ-як правильно?*/
 .hd {
@@ -246,7 +247,7 @@ body {
    text-align: center;
    margin: 0 452px 30px;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 
 .head-button {
@@ -305,7 +306,8 @@ cursor: pointer;
 /*Section-narrative*/
 .narrative {
    display: block;
-   outline: solid tomato;
+
+   /*outline: solid tomato;*/
 
 }
 /*HEAD*/
@@ -318,7 +320,7 @@ cursor: pointer;
    /*Відступ до коладжу*/
    margin-bottom: 50px;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 /*Foto*/
 .narrative-list {
@@ -328,11 +330,12 @@ cursor: pointer;
    /*Забираючи крайній*/
    margin-left: calc(-1 * var(--nararative-margin-left));
 
-   outline: solid tomato;
+   /*outline: solid tomato;*
 }
 .narrative-list-item {
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
+
 .narrative-list-item{
    display: flex;
    /*Флекс - Адаптивні відступи mrg*/
@@ -347,14 +350,14 @@ cursor: pointer;
    max-width: 100%;
    height: auto;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 
 /*Section-team*/
 .team {
    background-color: #F5F4FA;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 /*Фіксація секції в значеннях падінг*/
 .section-team {
@@ -369,7 +372,7 @@ cursor: pointer;
    text-align: center;
    letter-spacing: 0.03em;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 /*team-box*/
 .team-list {
@@ -378,7 +381,7 @@ cursor: pointer;
    
    margin-left: calc(-1 * var(--team-margin-left));
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 .team-item {
    flex-wrap: wrap;
@@ -390,7 +393,7 @@ cursor: pointer;
    border-radius: 0px 0px 4px 4px;
    max-width: 270px;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 
 .team-images {
@@ -398,7 +401,7 @@ cursor: pointer;
    max-width: 100%;
    height: auto;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 /*team-title*/
 .team-list-title {
@@ -422,7 +425,8 @@ cursor: pointer;
 /*Section-Filter*/
 .portfolio{
    display: flex;
-   outline: solid tomato;
+
+   /*outline: solid tomato;*/
 }
 .mrgn {
    margin-bottom: 50px;
@@ -432,7 +436,7 @@ cursor: pointer;
    margin-left: auto;
    margin-right: auto;
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 .filter-item:not(:first-child) {
    margin-left: 8px;
@@ -461,9 +465,9 @@ cursor: pointer;
 box-shadow: var(--shadow-button);
 }
 
-/*Section-Projects*/
+/*Section-Projects*
 .section-projects {
-}
+}*/
 .projects-list {
    display:  flex;
    flex-wrap: wrap;
@@ -474,7 +478,7 @@ box-shadow: var(--shadow-button);
    margin-left: calc(-1 * var(--project-margin-left));
    margin-top: calc(-1 * var(--project-margin-top));
 
-   outline: solid tomato;
+   /*outline: solid tomato;*/
 }
 .projects-list-item {
    display: block;
