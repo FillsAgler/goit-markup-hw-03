@@ -182,7 +182,7 @@ body {
    display: flex;
    flex-direction: column;
 }
-.footer < a {
+.footer > a {
    margin-bottom: 20px;
 }
 .section-conteiner {
@@ -197,6 +197,7 @@ body {
    line-height: 1.19;
    letter-spacing: 0.03em;
    cursor: pointer;
+   display: block;
 
    margin-bottom: 20px;
 
@@ -255,7 +256,7 @@ body {
    text-transform: uppercase;
    /*Як правильно задавати позицію тайтла???*/
    text-align: center;
-   margin: 0 237px 30px;
+   max-width: 696px;
    /*outline: solid tomato;*/
 }
 
