@@ -178,8 +178,8 @@ body {
 }
 .section-conteiner {
    padding: 60px 0px;
-
 }
+
 /*footer-logo*/
 .footer-logo {
    font-family: Raleway;
@@ -433,8 +433,9 @@ cursor: pointer;
 }
 .filter-list {
    display: flex;
-   margin-left: auto;
-   margin-right: auto;
+   justify-content: center;
+
+   margin-bottom: 50px;
 
    /*outline: solid tomato;*/
 }
