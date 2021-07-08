@@ -60,7 +60,8 @@ body {
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
-   /*outline: 2px solid tomato;*/
+
+   outline: 2px solid tomato;
 }
 /*Хедер - вирівненя елементів хедера, КОСТИЛЬ-як правильно?*
 .hd {
@@ -103,9 +104,6 @@ body {
    letter-spacing: 0.02em;
 
    border-bottom: 1px solid #ECECEC;
-   justify-self: center;
-   justify-content: center;
-   justify-items: center;
 }
 
 /*Nav*/
@@ -113,6 +111,7 @@ body {
 .header-nav {
    display: flex;
    align-items: center;
+   justify-content: space-between;
 }
 .nav {
    display:flex;
