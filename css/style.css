@@ -18,12 +18,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
 :root {
+   --white-color:#fff;
     /*Button text*/
    --title-text-color:#212121;
     /*Button text*/
    --subtitle-text-color:#757575;
-   /*Text on backgrond, Button*/
-   --white-color:#fff;
+    /*found-family*/
+   --basic-side-found: Roboto;
+   --logo-found: Raleway;
     /*logo-heder*/
    --logo-color:#2196F3;
    --header-logo-color:#000;
@@ -49,7 +51,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 body {
    background-color: var(--primary-background-color);
    color: var(--title-text-color);
-   font-family: Roboto, sans-serif;
+   font-family: var(--basic-side-found), sans-serif;
    letter-spacing: 0.03em;
    font-size: 18px;
    line-height: 1.67;
@@ -67,7 +69,7 @@ body {
 
 /*logo*/
 .logo {
-   font-family: Raleway;
+   font-family: var(--logo-found);
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
@@ -170,7 +172,7 @@ body {
 
 /*footer-logo*/
 .footer-logo {
-   font-family: Raleway;
+   font-family: var(--logo-found);
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
