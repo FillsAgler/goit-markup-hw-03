@@ -25,8 +25,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
    /*Text on backgrond, Button*/
    --white-color:#fff;
     /*logo-heder*/
-   --logo1-color:#2196F3;
-   --logo2-color:#000;
+   --logo-color:#2196F3;
+   --header-logo-color:#000;
+   --footer-logo-color: #fff;
     /*Hover-nav-footer*/
    --hover-color: #18a0fb;
     /*Button-background-color*/
@@ -75,6 +76,10 @@ body {
 
    padding-top: 23px;
    padding-bottom: 25px;
+   color: var(--logo-color);
+}
+.logo-header {
+   color: var(--header-logo-color);
 }
 
 /*HEDER*/ 
@@ -174,14 +179,13 @@ body {
    display: block;
 
    margin-bottom: 20px;
+   color: var(--logo-color);
 
 }
-.footer-logo-color1 {
-   color: var(--logo1-color);
+.color-studio-logo-footer{
+   color: white;
 }
-.footer-logo-color2 {
-   color: var(--white-color);
-}
+
 .footer-item:not(:last-child), .footer-address{
    padding-bottom: 9px;
 }
@@ -458,7 +462,7 @@ box-shadow: var(--shadow-button);
    border: 1px solid #EEEEEE;
    box-sizing: border-box;
    max-width: 370px;
-   
+
 
    flex-basis: calc(100% / 3 - var(--project-margin-left));
    margin-left: var(--project-margin-left);
