@@ -58,14 +58,16 @@ body {
    width: 1200px;
    margin-left: auto;
    margin-right: auto;
-
+   padding-left: 15px;
+   padding-right: 15px;
    /*outline: 2px solid tomato;*/
 }
-/*Хедер - вирівненя елементів хедера, КОСТИЛЬ-як правильно?*/
+/*Хедер - вирівненя елементів хедера, КОСТИЛЬ-як правильно?*
 .hd {
    display: flex;
    padding-left: 15px;
    padding-right: 15px;
+   width: 1200px;
 }
 /*Падинги секцій сторінки*/
 .section{
@@ -73,23 +75,6 @@ body {
    padding-right: 15px;
    margin-bottom: 94px;
 }
-
-/*HEDER*/ 
-.page-header {
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 1.14;
-   letter-spacing: 0.02em;
-
-   border: 1px solid #ECECEC;
-}
-
-/*Nav*/
-.nav {
-   display:inline-flex;
-   align-items: center;
-}
-
 
 /*logo*/
 .logo {
@@ -102,7 +87,6 @@ body {
 
    padding-top: 23px;
    padding-bottom: 25px;
-
 }
 .logo-color1 {
    color: var(--logo1-color);
@@ -111,11 +95,35 @@ body {
    color:var(--logo2-color);
 }
 
+/*HEDER*/ 
+.page-header {
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+
+   border-bottom: 1px solid #ECECEC;
+   justify-self: center;
+   justify-content: center;
+   justify-items: center;
+}
+
+/*Nav*/
+
+.header-nav {
+   display: flex;
+   align-items: center;
+}
+.nav {
+   display:flex;
+   align-items: center;
+}
 
 /*Site-nav*/
 .site-nav { 
    display:flex;
    margin-left: 93px;
+
 }
 
 /*позиціонування між елементами списку, 1ел без значення*/
@@ -143,10 +151,8 @@ body {
 
 /*Contacts*/
 .contacts {
-   display:inline-flex;
-   align-items: center;
+   display:flex;
    margin-left: auto;
-
 }
 /*Позиц. між елементами списку, 1ел без знач.*/
 .contacts-item:not(:first-child){
@@ -176,6 +182,9 @@ body {
    display: flex;
    flex-direction: column;
 }
+.footer < a {
+   margin-bottom: 20px;
+}
 .section-conteiner {
    padding: 60px 0px;
 }
@@ -190,6 +199,7 @@ body {
    cursor: pointer;
 
    margin-bottom: 20px;
+
 }
 .footer-logo-color1 {
    color: var(--logo1-color);
@@ -197,8 +207,8 @@ body {
 .footer-logo-color2 {
    color: var(--white-color);
 }
-.footer-item:not(:last-child) {
-   margin-bottom: 9px;
+.footer-item:not(:last-child), .footer-address{
+   padding-bottom: 9px;
 }
 /*footer-list*/
 .footer-list{
@@ -233,9 +243,9 @@ body {
 }
 /*Значення падінгу для секції героя*/
 .section-main-title{
+   height: 600px;
    padding-top: 200px;
    padding-bottom: 210px;
-   margin-bottom: 94px;
 }
 /**/
 .head-title {
@@ -245,8 +255,7 @@ body {
    text-transform: uppercase;
    /*Як правильно задавати позицію тайтла???*/
    text-align: center;
-   margin: 0 452px 30px;
-
+   margin: 0 237px 30px;
    /*outline: solid tomato;*/
 }
 
@@ -271,8 +280,22 @@ cursor: pointer;
 }
 /*Section-feature*/
 .feature {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+.section-title {
+   color: var(--secondary-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   margin-top: 0;
+   margin-bottom: 50px;
+}
+
+.features {
    display: flex;
-   margin-bottom: 94px;
+
 }
 /*.feature-list*/
 .feature-list {
@@ -290,13 +313,12 @@ cursor: pointer;
 .feature-list-item + .feature-list-item {
    margin-left: var(--feature-margin-left);
 }
+
 .feature-list-title {
    font-weight: 700;
    line-height: 1.14;
    text-transform: uppercase;
    margin-bottom: 10px;
-
-   display: block;
 }
 .feature-list-text {
    color: var(--subtitle-text-color);
@@ -304,11 +326,9 @@ cursor: pointer;
 }
 
 /*Section-narrative*/
-.narrative {
-   display: block;
-
+.narrative{
+   padding-bottom: 94px;
    /*outline: solid tomato;*/
-
 }
 /*HEAD*/
 .narrative-head {
@@ -372,12 +392,15 @@ cursor: pointer;
    text-align: center;
    letter-spacing: 0.03em;
 
+   margin-bottom: 50px;
    /*outline: solid tomato;*/
 }
 /*team-box*/
 .team-list {
    display:flex;
    flex-wrap: wrap;
+   text-align: center;
+   text-transform: none;
    
    margin-left: calc(-1 * var(--team-margin-left));
 
@@ -409,12 +432,15 @@ cursor: pointer;
    font-size: 16px;
    line-height: 1.18;
    letter-spacing: 0.03em;
+   text-align: center;
+   padding: 30px 0 10px 0;
 }
 .team-list-text {
    color: var(--subtitle-text-color);
    font-size: 16px;
    line-height: 1.18;
    letter-spacing: 0.03em; 
+   padding-bottom: 30px;
 }
 
 /*Portfolio____________________Portfolio*
@@ -424,18 +450,15 @@ cursor: pointer;
 
 /*Section-Filter*/
 .portfolio{
-   display: flex;
-
+   padding-top: 94px;
+   padding-bottom: 94px;
    /*outline: solid tomato;*/
-}
-.mrgn {
-   margin-bottom: 50px;
 }
 .filter-list {
    display: flex;
    justify-content: center;
 
-   margin-bottom: 50px;
+   padding-bottom: 50px;
 
    /*outline: solid tomato;*/
 }
@@ -502,6 +525,8 @@ box-shadow: var(--shadow-button);
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+   margin: 0 24px;
+   padding: 20px 0 4px 0;
 }
 /*sub-title*/
 .project-list-text {
@@ -509,4 +534,6 @@ box-shadow: var(--shadow-button);
    font-size: 16px;
    line-height: 1.8;
    letter-spacing: 0.03em;
+   margin: 0 24px;
+   padding-bottom: 20px;
 }
